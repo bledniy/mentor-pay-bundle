@@ -1,6 +1,6 @@
 {
     "type": "symfony-bundle",
-    "name": "bledniy/mentor-payment-bundle",
+    "name": "bledniy/mentor-pay-bundle",
     "description": "Payment client for mentor-app-payment",
     "license": "proprietary",
     "minimum-stability": "stable",
