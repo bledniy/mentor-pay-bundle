@@ -1,0 +1,9 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  AppPaymentClient\:
+    resource: '../../'
+    exclude:
+      - '../../DependencyInjection/'

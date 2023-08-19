@@ -1,0 +1,59 @@
+.stripe-btn-default {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Montserat', sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    border-radius:30px;
+    background: #32325d !important;
+    color: #fff !important;
+}
+
+.stripe-btn-default:hover {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background: #48487D !important;
+    color: #fff !important;
+}
+
+.stripe-btn-me-qr {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.46875rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4caf50;
+    background-color: transparent;
+    background-image: none;
+    border-color: #4caf50;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.stripe-btn-me-qr:hover{
+    color: #fff;
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+

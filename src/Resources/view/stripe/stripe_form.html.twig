@@ -1,0 +1,20 @@
+<form id="{{ form_name }}" action="{{ path('payment-client_stripe_checkout') }}" method="post">
+    <input type="hidden" name="plan_type" value="{{ plan }}">
+    <input type="hidden" name="test" value="{{ test }}">
+    <input type="hidden" name="service_name" value="{{ service_name }}">
+    {% if order_id %}
+        <input type="hidden" name="order_id" value="{{ order_id }}">
+    {% else %}
+        <input type="hidden" name="order_id_url" value="{{ order_id_url }}">
+    {% endif %}
+    <input type="hidden" name="success_url" value="{{ success_url }}">
+    <input type="hidden" name="cancel_url" value="{{ cancel_url }}">
+    <input type="hidden" name="webhook_url" value="{{ webhook_url }}">
+    <input type="hidden" name="coupon" value=""/>
+    <input type="hidden" name="currency" value=""/>
+    <a class="stripe-btn stripe-btn-default" data-form="{{ form_name }}"><span id="stripe-btn-text" data-form="{{ form_name }}">{{ 'Pay now'|trans }}</span><img
+                src="{{ asset('bundles/apppaymentclient/img/stripe.svg') }}" id="stripe-icon"
+                height="14" width="14" style="vertical-align: middle; margin-left: 3px"/></a>
+</form>
+
+<link rel="stylesheet" href="{{ asset('bundles/apppaymentclient/css/stripe.css') }}?v=1.0.5">
